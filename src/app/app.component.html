@@ -7,11 +7,11 @@
   </div>
 <div class="col-xl-4 form-group">
   
-  <label for="novelField"></label>
-  <textarea [(ngModel)]='myTextArea' id='myTextArea' name="textAreaOne" type="text" placeholder="Enter text here..." class="inone"></textarea>
+ 
+<input-form class="inone" (wordArrayEvent)="onEngage($event)" ></input-form>
 </div>
 <br>
-<button class="button" (click)="engageApp()"> Engage! </button>
+<!-- <button class="button" (click)="engageApp()"> Engage! </button> -->
 
 <!-- <div class="col-xl-4 form-group">
   <div class="row-xl-4 form-group" *ngIf="(engage == true)">

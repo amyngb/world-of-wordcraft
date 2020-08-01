@@ -9,28 +9,21 @@ declare var $: any;
 export class AppComponent {
   title = 'world-of-wordcraft';
   engage = false;
-   novelText: string[];
-   myTextArea: string[];
-   nonStopWords = [];
-   stopWords = [];
-  storeWord: string;
+  myTextArea: string[];
+  inputText: string;
   wordCount = 0;
-  storedArray = [];
- wordDisplay =[];
-  arrayOfLines = [];
-  i = 0;
-  x = 0;
+  wordDisplay = [];
 
-  engageApp() {
+  onEngage(wordArray: string[]) {
+    // this.inputText = $('#myTextArea').val();
     
      console.log('App has been launched!');
      this.engage = true;
    
     //  var words = $('#myTextArea').val().split(' ');
 
-    var arrayOfLines = $('#myTextArea').val().split(' ');
 
-    this.wordDisplay = arrayOfLines.reduce((accum, value) => {
+    this.wordDisplay = wordArray.reduce((accum, value) => {
        const dupeIndex = accum.findIndex(itemX => itemX.word == value);
        if (dupeIndex == -1 ){
          accum.push({

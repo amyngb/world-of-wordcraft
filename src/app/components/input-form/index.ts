@@ -1,0 +1,1 @@
+export { InputFormComponent } from './input-form.component';

@@ -1,0 +1,11 @@
+.inone {
+    height: 400px; 
+    width: 300px;
+    padding-top: 0;
+    padding-left: 0;
+    line-height: 1em;
+    background-color: black;
+    color: rgb(253, 127, 81);
+    
+    
+}
